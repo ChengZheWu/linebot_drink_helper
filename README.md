@@ -1,17 +1,51 @@
-最近試玩了一下linebot，有興趣的人可以用用看，目前只有中文版，之後有空會再加入英文版，功能目前主要有兩個:
-1. 幫忙吃飯有選擇障礙的人推薦餐廳種類，以及透過定位去抓取方圓一公里內的相關餐廳(最多5家)
-2. 喝酒聚會小遊戲，各位可以暴力一點直接玩，也可以先玩一些小遊戲，再由輸的人去點擊按鈕
+# Drink Promoter Bot (酒促嬰仔) 🍻
 
-Line ID: @620kjouq
+**Drink Promoter Bot** is your personal Line Bot assistant designed specifically for drinking parties and social gatherings.
+Whether you're struggling with decision paralysis on where to go for a drink, or you need something fun to hype up the atmosphere, **Drink Promoter Bot** has got you covered!
 
-GitHub: https://lnkd.in/gNzssx2a
+**酒促嬰仔** 是一個專為喝酒聚會設計的 Line Bot 貼身小幫手。
+不管你是想喝酒但有選擇障礙，還是聚會氣氛不夠嗨想來點刺激的，找「酒促嬰仔」就對了！
 
-Teck Stack:
-* 程式語言與框架: Python Flask
-* 架構與資料處理: Webhook/事件驅動架構, Google map API (RESTful API Client), JSON 數據處理
-* 容器技術: Docker
-* 部署與伺服器: Render (PaaS), CI/CD, Gunicorn (WSGI伺服器)
-* 監控: UptimeRobot
-* Local開發環境: Python venv, ngrok(網路穿透)
-* AI: AI-Assisted Coding
-* 版本控制: Git
+## 📱 Line ID
+
+ID: `@620kjouq`
+
+## ✨ Features
+
+### 1. 🍶 Drinking Spot Recommender
+
+Perfect for when you can't decide where to go.
+
+* **How it works**: The bot randomly selects a type of venue from its database (e.g., Bar, Izakaya, Bistro, Stir-fry).
+* **Location-Based Search**: Once a type is chosen, it asks for your current location.
+* **Smart Recommendations**: Utilizing the **Google Maps API**, it searches for highly-rated spots within a **1 km radius** and provides a list of up to **10 recommendations** (including ratings and map links).
+
+### 2. 🎲 Drinking Game Roulette
+
+The ultimate ice-breaker to ensure no dull moments at your party.
+
+* **How it works**: The bot randomly selects a classic drinking game from its curated list (e.g., Number Bomb, Two Truths and a Lie, Truth or Dare).
+* **Instant Play**: It provides simple rules or penalty instructions so you can start playing immediately.
+* **Non-Stop Fun**: Finished a round? Just hit the button to spin the roulette again!
+
+## 🛠️ Tech Stack
+
+This project is an example of a Serverless application combining Webhook event-driven architecture with cloud deployment.
+
+| Category | Technology |
+| --- | --- |
+| **Language & Framework** | Python, Flask |
+| **Messaging Protocol** | Line Messaging API (SDK v3) |
+| **External Services** | Google Maps API (Places API) |
+| **Containerization** | Docker |
+| **App Server** | Gunicorn (WSGI) |
+| **Cloud Deployment (PaaS)** | Render |
+| **Monitoring** | UptimeRobot (Keeps the service awake) |
+| **Development Environment** | Python venv, ngrok (Local Webhook testing) |
+| **AI Assistance** | AI-Assisted Coding |
+| **Version Control** | Git |
+
+## 🚀 Future Roadmap
+
+* [ ] **Multi-language Support**: Add an English interface for international users.
+* [ ] **More Games**: Expand the drinking game database with more varieties.
